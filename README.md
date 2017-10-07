@@ -5,7 +5,7 @@ The prototype dashboard looks like (assume a customer whose `ID = 7` is browsing
 ![](figures/UI.png)
 
 where the left hand interface gives user-item recommendation, whereas the right hand shows item-item recommendation.
-In the item-item recommendation, `score` is the similarity computed by cosine-similarity in the vector space given by content features, e.g. `body`, `taste`, `country` etc. Here the example shows top-10 beers, beer-id = 2671, 3467, 120 etc, which have top 10 highest similarity scores with respect to `product_ID = 144`.
+In the item-item recommendation, `score` is the similarity computed by cosine-similarity in the vector space given by content features, e.g. `body`, `taste`, `country` etc. Here the example shows top-10 beers, `product_ID = 2671, 3467, 120` etc, which have top 10 highest similarity scores with respect to `product_ID = 144`.
 
 
 In the user-item recommendaiton, the neighborhood model and matrix-factorization techniques with ALS model are implemented to predict ratings. Since each customer has different preferences and tastes, such a recommendation is personalized.
