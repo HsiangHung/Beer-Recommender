@@ -5,13 +5,13 @@ The prototype dashboard looks like (assume a customer whose `ID = 7` is browsing
 ![](figures/UI.png)
 
 where the left hand interface gives user-item recommendation, whereas the right hand shows item-item recommendation.
-In the item-item recommendation, `score` is the similarity computed by cosine-similarity in the vector space given by content features, e.g. `body`, `taste`, `country` etc. Here the example shows top-10 beers which are similar to `product_ID = 144` including .
+In the item-item recommendation, `score` is the similarity computed by cosine-similarity in the vector space given by content features, e.g. `body`, `taste`, `country` etc. Here the example shows top-10 beers, beer-id = 2671, 3467, 120 etc, which have top 10 highest similarity scores with respect to `product_ID = 144`.
 
 
 In the user-item recommendaiton, the neighborhood model and matrix-factorization techniques with ALS model are implemented to predict ratings. Since each customer has different preferences and tastes, such a recommendation is personalized.
 In the dashboard, we recommend top-10 beers to the `ID = 7` customer based on his/her preference. 
 
  
-The pipeline of the prototype recommendation engine is shown below. In the backend, the recommendation tables are prepared offline using Spark and loaded into AWS databases. For more details, please see the presentation [slides](https://www.slideshare.net/HsiangHsuanHung/contentbasedcollaborative-filtering-beer-recommender).
+The pipeline of the prototype recommendation engine is shown below. In the backend, the recommendation tables are prepared offline using Spark and loaded into AWS databases. For more details, please see the presentation slides [here](https://www.slideshare.net/HsiangHsuanHung/contentbasedcollaborative-filtering-beer-recommender).
 
 ![](figures/ML.png)
